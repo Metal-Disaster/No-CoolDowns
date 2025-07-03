@@ -1,0 +1,29 @@
+--Vanilla
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+
+local abilityGui = player:WaitForChild("PlayerGui"):WaitForChild("AbilitysGui")
+local abilityFrame = abilityGui:WaitForChild("AbilityFrame")
+local speedBoost = abilityFrame:WaitForChild("AxeThrow")
+local config = speedBoost:WaitForChild("Configuration")
+local cooldown = config:WaitForChild("CoolDown")
+
+cooldown.Value = 0
+
+local abilityGui = player:WaitForChild("PlayerGui"):WaitForChild("AbilitysGui")
+local abilityFrame = abilityGui:WaitForChild("AbilityFrame")
+local speedBoost = abilityFrame:WaitForChild("AxeAttack")
+local config = speedBoost:WaitForChild("Configuration")
+local cooldown = config:WaitForChild("CoolDown")
+
+cooldown.Value = 0
+
+local abilityGui = player:WaitForChild("PlayerGui"):WaitForChild("AbilitysGui")
+local abilityFrame = abilityGui:WaitForChild("AbilityFrame")
+local speedBoost = abilityFrame:WaitForChild("AxeBlock")
+local config = speedBoost:WaitForChild("Configuration")
+local cooldown = config:WaitForChild("CoolDown")
+
+cooldown.Value = 0
