@@ -1,0 +1,21 @@
+--Cream
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+
+local abilityGui = player:WaitForChild("PlayerGui"):WaitForChild("AbilitysGui")
+local abilityFrame = abilityGui:WaitForChild("AbilityFrame")
+local speedBoost = abilityFrame:WaitForChild("Attack")
+local config = speedBoost:WaitForChild("Configuration")
+local cooldown = config:WaitForChild("CoolDown")
+
+cooldown.Value = 0
+
+local abilityGui = player:WaitForChild("PlayerGui"):WaitForChild("AbilitysGui")
+local abilityFrame = abilityGui:WaitForChild("AbilityFrame")
+local speedBoost = abilityFrame:WaitForChild("Glide")
+local config = speedBoost:WaitForChild("Configuration")
+local cooldown = config:WaitForChild("CoolDown")
+
+cooldown.Value = 0
